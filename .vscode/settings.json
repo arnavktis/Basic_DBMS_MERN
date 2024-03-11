@@ -16,5 +16,6 @@
       "connectionTimeout": 30
     }
   ],
-  "dataworkspace.excludedProjects": ["new_proj/new_proj.sqlproj"]
+  "dataworkspace.excludedProjects": ["new_proj/new_proj.sqlproj"],
+  "liveServer.settings.port": 5501
 }

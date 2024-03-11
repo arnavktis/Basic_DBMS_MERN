@@ -49,6 +49,11 @@ VALUES
 (2, 2002, 2, 1002, '2024-03-08'),
 (3, 2003, 3, 1003, '2024-03-08');
 
+CREATE TABLE Practice(
+    Employee_name CHAR(15),
+    Employee_id INT(5) PRIMARY KEY,
+    Deptartment_name CHAR(20)
+);
 
 SELECT Employee.Worker_name AS W_name, Department.Dept_name AS D_name, Allotment.Allot_id AS A_id, 
 Tools.Tool_name AS T_name, COUNT(Allotment.Tools_id) AS Quantity
