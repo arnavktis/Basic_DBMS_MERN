@@ -87,6 +87,7 @@ body {
     display: none;
 }
 #DataInput{
+    margin: 15px;
     display: none;
 }
 .Tools input{

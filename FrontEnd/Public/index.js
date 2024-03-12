@@ -14,19 +14,21 @@ const read = async () => {
     if (data) {
       const container = document.getElementById("DataInput");
       var divToToggle = document.querySelector("#DataInput");
-        if (
-            divToToggle.style.display === "none" ||
-            divToToggle.style.display === ""
-        ) {
-            divToToggle.style.display = "block";
-        }
-      container.innerHTML = data.map((dat) => {
-            return`
+      if (
+        divToToggle.style.display === "none" ||
+        divToToggle.style.display === ""
+      ) {
+        divToToggle.style.display = "block";
+      }
+      container.innerHTML = data
+        .map((dat) => {
+          return `
             <p>Sr.no: ${dat.S_no} </p>
             <p>Name: ${dat.Dept_name}</p>
             <p>Description: ${dat.Dept_id}</p>
             `;
-        }).join("");
+        })
+        .join("");
     } else {
       console.error("Data not found"); // Handle error on client-side
     }
@@ -34,6 +36,29 @@ const read = async () => {
     console.error("Error fetching data:", error); // Handle other errors
   }
 };
+class Data {
+  constructor(empName, empId, dep, toolName, toolId, allotment) {
+    this.empName = empName;
+    this.empId = empId;
+    this.dep = dep;
+    this.toolName = toolName;
+    this.toolId = toolId;
+    this.allotment = allotment;
+  }
+}
+let data;
+function submit() {
+  data = new Data(
+    document.querySelector("#employeeName").value,
+    document.querySelector("#employeeId").value,
+    document.querySelector("#departmentType").value,
+    document.querySelector("#toolName").value,
+    document.querySelector("#toolID").value,
+    document.querySelector("#Allotment").value
+  );
+  console.log(JSON.stringify(data));
+  // return JSON.stringify(data);
+}
 
 function buttonClicked0() {
   console.log("very good");
@@ -73,15 +98,15 @@ function buttonClicked3() {
     divToToggle.style.display = "none";
   }
 }
+var readbtn = document.getElementById("DataInput");
+var show = false;
 
 function buttonClicked4() {
-  var divToToggle = document.querySelector(".DataInput");
-  if (
-    divToToggle.style.display === "none" ||
-    divToToggle.style.display === ""
-  ) {
-    divToToggle.style.display = "block";
+  if (show) {
+    readbtn.style.display = "none";
+    show = false;
   } else {
-    divToToggle.style.display = "none";
+    readbtn.style.display = "block";
+    show = true;
   }
 }
