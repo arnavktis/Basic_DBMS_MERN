@@ -1,108 +1,133 @@
 body {
-    background-color: rgb(237, 244, 249);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: rgb(237, 244, 249);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.title{
-    margin: auto;
+.title {
+  margin: auto;
 }
 .container {
-    background-color: rgb(199, 228, 249);
-    max-width: 500px;
-    max-height: 700px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgb(199, 228, 249);
+  max-width: 500px;
+  max-height: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.container h2{
-    margin-left: 152px;
+.container h2 {
+  margin-left: 152px;
 }
 .input-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
-.input-group input{
-    width: 96.6%;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.input-group input {
+  width: 96.6%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
-.input-group select{
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.input-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 .btnS {
-    background-color: #4c93af;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    margin:auto;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    display: flex;
-    transition: 0.4s;
-    justify-content: center; /* Align horizontally */
+  background-color: #4c93af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  display: flex;
+  transition: 0.4s;
+  justify-content: center; /* Align horizontally */
 }
 .btnS:hover {
-    transition: 0.4s;
-    background-color: #27c6b9;
+  transition: 0.4s;
+  background-color: #27c6b9;
 }
 .btn {
-    background-color: #4c98af;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.4s;
-    font-size: 18px;
-    /* margin-right: 10px; */
+  background-color: #4c98af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 18px;
+  /* margin-right: 10px; */
 }
 .btn:hover {
-    transition: 0.4s;
-    background-color: #16a7a2;
+  transition: 0.4s;
+  background-color: #16a7a2;
 }
-.button-section{
-    display: flex;
-    justify-content: space-between;
+.button-section {
+  display: flex;
+  justify-content: space-between;
 }
-.inputCRUD{
-    margin: 15px;
-    max-height: 800px;
+.inputCRUD {
+  margin: 15px;
+  max-height: 800px;
+}
+.tableOpt {
+  display: none;
+}
+.tableOpt select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 .inputstyle {
-    display: none;
+  display: none;
 }
-#DataInput{
-    margin: 15px;
-    display: none;
+.btnclose {
+  background-color: #4c98af;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 18px;
+  display: none;
 }
-.Tools input{
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+.btnclose:hover {
+  transition: 0.4s;
+  background-color: #16a7a2;
 }
-.Allotment input{
-    transition: 0.4s;
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+#DataInput {
+  margin: 15px;
+  display: none;
+}
+.Tools input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.Allotment input {
+  transition: 0.4s;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }

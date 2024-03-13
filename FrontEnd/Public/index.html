@@ -19,9 +19,22 @@
         <button class="btn" onclick="buttonClicked3()">Delete</button>
         <button class="btn" onclick="read()">Read</button>
       </div>
-      <div id="DataInput"></div>
+      <div id="DataCont">
+        <div id="DataInput"></div>
+        <button class="btnclose" onclick="buttonClicked4()">Close</button>
+      </div>
       <div class="inputCRUD">
-        
+        <div class="tableOpt">
+          <label for="tableSelect">Select a Table:</label>
+          <select id="tableSelect" name="tableSelect">
+            <option value="All">All</option>
+            <option value="Finance">Electricity</option>
+            <option value="HR">Plumbing</option>
+            <option value="IT">Horticulture</option>
+            <option value="Finance">None</option>
+          </select>
+          <button type="button" class="btn" onclick="insertData()" style="margin-top: 10px; margin-bottom: 10px;">Insert Data</button>
+        </div>
         <div class="inputstyle">
           <div class="input-group">
             <label for="employeeName">Employee Name:</label>

@@ -5,6 +5,7 @@
 //     var searchResult = `Searching for employee: ${employeeName} in department type: ${departmentType}`;
 //     document.getElementById("searchResult").innerText = searchResult;
 // }
+
 const read = async () => {
   const id = 1;
   try {
@@ -29,6 +30,13 @@ const read = async () => {
             `;
         })
         .join("");
+      var divToToggle = document.querySelector(".btnclose");
+      if (
+        divToToggle.style.display === "none" ||
+        divToToggle.style.display === ""
+      ) {
+        divToToggle.style.display = "block";
+      }
     } else {
       console.error("Data not found"); // Handle error on client-side
     }
@@ -64,7 +72,7 @@ function buttonClicked0() {
   console.log("very good");
 }
 function buttonClicked1() {
-  var divToToggle = document.querySelector(".inputstyle");
+  var divToToggle = document.querySelector(".tableOpt");
   if (
     divToToggle.style.display === "none" ||
     divToToggle.style.display === ""
@@ -73,6 +81,16 @@ function buttonClicked1() {
   } else {
     divToToggle.style.display = "none";
   }
+}
+
+function insertData() {
+  var divToToggle = document.querySelector(".inputstyle");
+  if (divToToggle.style.display === "none") {
+    divToToggle.style.display = "block";
+  } else {
+    divToToggle.style.display = "none";
+  }
+
 }
 
 function buttonClicked2() {
@@ -98,15 +116,14 @@ function buttonClicked3() {
     divToToggle.style.display = "none";
   }
 }
-var readbtn = document.getElementById("DataInput");
-var show = false;
 
 function buttonClicked4() {
-  if (show) {
-    readbtn.style.display = "none";
-    show = false;
-  } else {
-    readbtn.style.display = "block";
-    show = true;
+  var divToToggle = document.querySelector("#DataInput");
+  if (divToToggle.style.display === "block") {
+    divToToggle.style.display = "none";
+    var closeButton = document.querySelector(".btnclose");
+    if (closeButton.style.display === "block") {
+      closeButton.style.display = "none";
+    }
   }
 }
